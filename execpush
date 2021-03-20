@@ -1,0 +1,10 @@
+#!/usr/bin/expect
+set timeout -1
+spawn ./auto.sh tpc-h-impala
+expect "Username for 'https://github.com': "
+send -- "sanya.safin.89@inbox.ru
+"
+expect "Password for 'https://sanya.safin.89@inbox.ru@github.com': "
+send -- "love6591321
+"
+expect eof
